@@ -8,7 +8,7 @@ for(const botao of botoes) {
    if (botao.classList.contains("automatico")) {
     if (automaticoAtivo) {
         clearInterval(intervailID);
-        autommaticoAtivo = false
+        automaticoAtivo = false
     }else {
         automaticoAtivo = true;
         intervailID = setInterval(() =>{
@@ -17,7 +17,7 @@ for(const botao of botoes) {
          }else if (cont === 1) {
             img.setAttribute("src", "./img/amarelo.png");
          } else if (cont === 2) {
-            img.setAttribute("src", "./verde.png");
+            img.setAttribute("src", "./img/verde.png");
          }
          cont++;
          if (cont === 3) {
@@ -32,6 +32,5 @@ else {
     img.setAttribute("src", `./img/${botao.id}.png`);
 }
    
-   img.setAttribute("src", `./img/${botao.id}.png`);
   });
 }
